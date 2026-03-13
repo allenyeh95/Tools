@@ -14,7 +14,7 @@ class HyperliquidMonitor:
         
     def play_coin_sound(self):
         """呼叫系統組件播放音效，不阻塞程式執行"""
-        file_path = r"C:\Users\allen\mmbot\coin.mp3"
+        file_path = r"YOUR FILE PATH.mp3"
         if os.path.exists(file_path):
             # 使用 Popen 開啟新進程播放，這樣就不會卡住監控畫面
             ps_command = f'Add-Type -AssemblyName presentationCore; $player = New-Object System.Windows.Media.MediaPlayer; $player.Open("{file_path}"); $player.Play(); Start-Sleep 5'
